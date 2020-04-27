@@ -1,0 +1,6 @@
+{
+  "name": "Vidly App",
+  "mail": {
+    "server": "prod-mail-server"
+  }
+}
