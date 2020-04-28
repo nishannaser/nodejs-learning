@@ -1,4 +1,3 @@
-const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 const { Genre, validate } = require('../models/genre');
 const auth = require('../middleware/auth');
@@ -7,6 +6,7 @@ const router = express.Router();
 
 // Get
 router.get('/', async (req, res) => {
+    throw new Error('Could not get genres');
     const genres = await Genre.find();
     res.send(genres);
 });
